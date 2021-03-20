@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on ABC102030&#39;s Blog</title>
+    <link>https://abc102030.github.io/tags/</link>
+    <description>Recent content in Tags on ABC102030&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 16 Mar 2021 17:15:00 +0800</lastBuildDate><atom:link href="https://abc102030.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CentOS</title>
+      <link>https://abc102030.github.io/tags/centos/</link>
+      <pubDate>Tue, 16 Mar 2021 17:15:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/tags/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://abc102030.github.io/tags/linux/</link>
+      <pubDate>Tue, 16 Mar 2021 17:15:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LineageOS</title>
+      <link>https://abc102030.github.io/tags/lineageos/</link>
+      <pubDate>Wed, 10 Feb 2021 17:00:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/tags/lineageos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>树莓派</title>
+      <link>https://abc102030.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
+      <pubDate>Wed, 10 Feb 2021 17:00:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://abc102030.github.io/tags/hello-world/</link>
+      <pubDate>Mon, 08 Feb 2021 20:00:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/tags/hello-world/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

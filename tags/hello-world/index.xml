@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello World on ABC102030&#39;s Blog</title>
+    <link>https://abc102030.github.io/tags/hello-world/</link>
+    <description>Recent content in Hello World on ABC102030&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 08 Feb 2021 20:00:00 +0800</lastBuildDate><atom:link href="https://abc102030.github.io/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://abc102030.github.io/2021/hello-world/</link>
+      <pubDate>Mon, 08 Feb 2021 20:00:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/2021/hello-world/</guid>
+      <description>你好世界 Hello World C #include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;#34;Hello, World! \n&amp;#34;); return 0; } C# using System; namespace HelloWorldApplication { class HelloWorld { static void Main(string[] args) { Console.WriteLine(&amp;#34;Hello World&amp;#34;); Console.ReadKey(); } } } JAVA public class HelloWorld { public static void main(String[] args) { System.out.println(&amp;#34;Hello World&amp;#34;); } } JavaScript function helloWorld () { alert(&amp;#34;Hello, World!&amp;#34;) } Python #!/usr/bin/python3 print(&amp;#34;Hello, World!&amp;#34;)</description>
+    </item>
+    
+  </channel>
+</rss>

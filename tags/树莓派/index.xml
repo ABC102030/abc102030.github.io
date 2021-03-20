@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>树莓派 on ABC102030&#39;s Blog</title>
+    <link>https://abc102030.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
+    <description>Recent content in 树莓派 on ABC102030&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 10 Feb 2021 17:00:00 +0800</lastBuildDate><atom:link href="https://abc102030.github.io/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>树莓派4安装LineageOS 17.1</title>
+      <link>https://abc102030.github.io/2021/rpi4-install-lineageos-17.1/</link>
+      <pubDate>Wed, 10 Feb 2021 17:00:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/2021/rpi4-install-lineageos-17.1/</guid>
+      <description>将于最近更新</description>
+    </item>
+    
+  </channel>
+</rss>

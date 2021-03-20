@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noodp"/>
+    <meta name="author" content="ABC102030">
+    
+    
+    
+    <link rel="prev" href="https://abc102030.github.io/2021/rpi4-install-lineageos-17.1/" />
+    
+    <link rel="canonical" href="https://abc102030.github.io/2021/centos/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>
+        
+        
+            虚拟机安装CentOS及数据恢复 | ABC102030&#39;s Blog
+        
+    </title>
+    <meta name="title" content="虚拟机安装CentOS及数据恢复 | ABC102030&#39;s Blog">
+    
+<link rel="stylesheet" href="/css/main.min.css">
+
+
+    
+    
+ 
+
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/abc102030.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "虚拟机安装CentOS及数据恢复",
+    "headline" : "虚拟机安装CentOS及数据恢复",
+    "description" : "虚拟机安装CentOS及数据恢复 准备工作 清醒的大脑和理智的心 VirtualBox虚拟机（本次教程使用VirtualBox-6.1.18） Ce",
+    "inLanguage" : "zh-cn",
+    "author" : "ABC102030",
+    "creator" : "ABC102030",
+    "publisher": "ABC102030",
+    "accountablePerson" : "ABC102030",
+    "copyrightHolder" : "ABC102030",
+    "copyrightYear" : "2021",
+    "datePublished": "2021-03-16 17:15:00 \u002b0800 CST",
+    "dateModified" : "2021-03-16 17:15:00 \u002b0800 CST",
+    "url" : "https:\/\/abc102030.github.io\/2021\/centos\/",
+    "wordCount" : "1047",
+    "keywords" : [ "CentOS","Linux", "ABC102030\u0027s Blog"]
+}
+</script>
+
+  </head>
+    <body class="">
+        <div class="wrapper">
+            <nav class="navbar">
+    
+        <progress class="content_progress" max="0" value="0"></progress>
+    
+    <div class="container">
+        
+            <div class="navbar-header header-back2home-logo">
+                <span class="logo_mark" >>$</span>
+                <a href="https://abc102030.github.io">
+                    <span class="logo_text" >cd /home/</span>
+                    <span class="logo_cursor" ></span>
+                </a>
+            </div>
+        
+        <div class="navbar-right">
+                
+                <span class="menu">
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+                <span class="divide"></span>
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a>
+                </span>
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+    
+        <progress class="content_progress" max="0" value="0"></progress>
+    
+     <div class="container">
+        <div class="navbar">
+            <div class="navbar-header header-logo">
+                    <a href="https://abc102030.github.io">ABC102030&#39;s Blog</a>
+            </div>
+            <div class="navbar-right">
+                <div><a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a></div>
+                <div class="menu-toggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                <nav class="mb-md">
+                    
+                    
+                        <a class="menu-item" href="/posts/" title="">
+                            <h3>Blog</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/categories/" title="">
+                            <h3>Categories</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/tags/" title="">
+                            <h3>Tags</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/about/" title="">
+                            <h3>About</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                </nav>
+        </div>
+    </div>
+</nav>
+            <main class="main">
+                <div class="container">
+                    
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">虚拟机安装CentOS及数据恢复</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://abc102030.github.io" rel="author">ABC102030</a> with ♥
+                <span class="post-time">
+                on <time datetime=2021-03-16 itemprop="datePublished">March 16, 2021</time>
+                </span>
+                in
+                
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        
+                        
+                        
+                          <a href="https://abc102030.github.io/categories/linux/"> Linux, </a>
+                        
+                        
+                </span>
+                <span class="post-word-count">1047 words</span>
+        </div>
+    </header>
+
+    <div class="post-content">
+        
+
+        
+        
+            
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        <h1 id="虚拟机安装centos及数据恢复">虚拟机安装CentOS及数据恢复</h1>
+<h2 id="准备工作">准备工作</h2>
+<blockquote>
+<p>清醒的大脑和理智的心<br>
+<a href="https://download.virtualbox.org/virtualbox/6.1.18/VirtualBox-6.1.18-142142-Win.exe">VirtualBox</a>虚拟机（本次教程使用VirtualBox-6.1.18）<br>
+<a href="http://mirrors.aliyun.com/centos/">CentOS</a>镜像（本次教程使用CentOS-6.3）</p>
+</blockquote>
+<h2 id="正文">正文</h2>
+<h3 id="安装virtualbox虚拟机">安装VirtualBox虚拟机</h3>
+<p>打开下载好的VirtualBox安装包<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/1.PNG" alt=""><br>
+全程默认下一步，中途会弹出安装驱动的提示，点击安装
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/2.PNG" alt=""><br>
+等待几分钟后便完成安装</p>
+<h3 id="配置环境">配置环境</h3>
+<p>打开VirtualBox，新建一个虚拟电脑
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/3.PNG" alt=""><br>
+名称无所谓，最好做到见名知意<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/4.PNG" alt=""><br>
+内存大小看电脑配置决定，推荐 <strong>1G</strong> 起步<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/5.PNG" alt=""><br>
+虚拟硬盘选择 <strong>VDI</strong> 和 <strong>动态分配</strong><br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/7.PNG" alt="">
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/8.PNG" alt=""><br>
+大小推荐<strong>100G</strong>起步<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/9.PNG" alt=""><br>
+网络连接方式选择 <strong>桥接网卡</strong>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/10.PNG" alt=""><br>
+为虚拟电脑添加镜像
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/12.PNG" alt=""></p>
+<h3 id="虚拟机安装centos">虚拟机安装CentOS</h3>
+<p>启动虚拟电脑，安装CentOS，选择第一项<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/13.PNG" alt=""><br>
+选择 <strong>Skip</strong><br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/14.PNG" alt=""><br>
+语言选择 <strong>中文</strong> ~如果你的英语很好，也可以选择英语~<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/15.PNG" alt=""><br>
+键盘选择 <strong>美国英语式</strong><br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/16.PNG" alt=""><br>
+安装设备选择 <strong>基本存储设备</strong><br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/17.PNG" alt=""><br>
+出现存储设备警告选择  <strong>是，忽略所有数据</strong><br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/18.PNG" alt=""><br>
+填写主机名<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/19.PNG" alt=""><br>
+选择时区<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/20.PNG" alt=""><br>
+填写密码，如果密码不够安全，会有弹窗提示<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/21.PNG" alt=""><br>
+选择安装类型，如果你是新手建议选择使用 <strong>所有空间</strong>，老手建议选择 <strong>创建自定义布局</strong><br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/22.PNG" alt=""><br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/23.PNG" alt="">
+引导设置<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/26.PNG" alt=""><br>
+此处选择  <strong>Desktop</strong> ~如果你是老手也可以选择无桌面版本~<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/27.PNG" alt=""><br>
+选择下一步后便开始安装系统了，你可以出去喝杯咖啡休息休息<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/28.PNG" alt=""></p>
+<h3 id="centos欢迎配置">CentOS欢迎配置</h3>
+<p><strong>同意许可</strong> ~可以全程无脑下一步，冲就完事了~<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/29.PNG" alt=""><br>
+创建用户<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/30.PNG" alt=""><br>
+设置日期和时间<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/31.PNG" alt=""><br>
+Kdump(系统崩溃、死锁或者死机的时候用来转储内存运行参数的一个工具和服务)
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/33.PNG" alt=""><br>
+接下来输入密码就可以进入桌面了，开始CentOS之旅</p>
+<h3 id="centos网络配置由于网络环境问题以下只提供代码">CentOS网络配置（由于网络环境问题，以下只提供代码）</h3>
+<p>打开终端，进入root模式<code>su root</code><br>
+配置临时IP地址 <code>ifconfig eth0 192.168.XXX.XXX</code><br>
+配置永久IP地址 <code>vim /etc/sysconfig/network-scripts/ifcfg-eth0</code><br>
+PS:Vim是从 vi 发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。</p>
+<pre><code>ONBOOT=yes
+BOOTPROTO=static
+
+IPADDR=192.168.XXX.XXX
+NETMASK=255.255.255.0
+GATEWAY=192.168.10.1
+DNS1=8.8.8.8
+:wq
+</code></pre><p>关闭防火墙 <code>service network restart</code></p>
+<h3 id="从删库到跑路">从删库到跑路</h3>
+<p>在终端中输入 <code>sudo rm -rf /bin</code>，不介意的话也可以尝试下 <code>sudo rm -rf</code>，尝试重启下<br>
+嗯，很好，怎么进不去系统了，收拾收拾，准备跑路吧，刚下飞机，人在柬埔寨<br>
+如果你执行了第一条，那还有得救，如果后者，yysy，还是跑路吧<br>
+强制关掉虚拟电脑，打开设置，为虚拟机电脑创建一块新的虚拟硬盘（所有操作按照安装来）<br>
+选择镜像和修改第一启动项<br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/36.PNG" alt=""><br>
+开始安装系统（多数步骤和第一次安装一样）<br>
+在创建分区的时候请注意！！！<br>
+在创建分区的时候请注意！！！<br>
+在创建分区的时候请注意！！！<br>
+允许的驱动器只选择 <em><strong>sda</strong></em><br>
+<img src="https://raw.githubusercontent.com/ABC102030/Blog-PicGo/master/img/CentOS%20VirtualBo/39.PNG" alt=""><br>
+完成这些操作，等待系统安装完成，就别去喝咖啡了，好好面壁四顾去吧<br>
+欢迎配置（和第一次安装一样）<br>
+进入系统，挂载以前的硬盘，你就会发现，除了bin文件夹的东西，以前的东西都还在</p>
+
+    </div>
+
+    <div class="post-copyright">
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>ABC102030 </span>
+                </p>
+            
+
+            
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://abc102030.github.io/2021/centos/>https://abc102030.github.io/2021/centos/</span>
+            </p>
+            
+            
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s):
+            
+            <span class="tag"><a href="https://abc102030.github.io/tags/centos/">
+                    #CentOS</a></span>
+            
+            <span class="tag"><a href="https://abc102030.github.io/tags/linux/">
+                    #Linux</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> ·
+                <span><a href="https://abc102030.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://abc102030.github.io/2021/rpi4-install-lineageos-17.1/" class="prev" rel="prev" title="树莓派4安装LineageOS 17.1"><i class="iconfont icon-left"></i>&nbsp;树莓派4安装LineageOS 17.1</a>
+        
+        
+    </div>
+
+    <div class="post-comment">
+        
+            
+                <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.bootcss.com/gitalk/1.5.2/gitalk.css">
+<script src="https://cdn.bootcss.com/gitalk/1.5.2/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: location.pathname, 
+        distractionFreeMode: false 
+    });
+    (function () {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+            return;
+        }
+        gitalk.render('gitalk-container');
+    })();
+</script>
+
+            
+        
+    </div>
+</article>
+                </div>
+            </main>
+            <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2021 - 2021</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i>
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://abc102030.github.io">ABC102030</a> | </span>
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/Mogeko/Mogege" target="_blank" rel="external nofollow">Mogege</a></span>
+    </div>
+</footer>
+
+
+
+
+
+
+<script defer src="/js/vendor_main.min.js"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script> pangu.spacingPage();</script>
+
+
+
+
+
+        </div>
+    </body>
+</html>

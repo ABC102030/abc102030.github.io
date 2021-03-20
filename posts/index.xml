@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ABC102030&#39;s Blog</title>
+    <link>https://abc102030.github.io/posts/</link>
+    <description>Recent content in Posts on ABC102030&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 16 Mar 2021 17:15:00 +0800</lastBuildDate><atom:link href="https://abc102030.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>虚拟机安装CentOS及数据恢复</title>
+      <link>https://abc102030.github.io/2021/centos/</link>
+      <pubDate>Tue, 16 Mar 2021 17:15:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/2021/centos/</guid>
+      <description>虚拟机安装CentOS及数据恢复 准备工作 清醒的大脑和理智的心 VirtualBox虚拟机（本次教程使用VirtualBox-6.1.18） Ce</description>
+    </item>
+    
+    <item>
+      <title>树莓派4安装LineageOS 17.1</title>
+      <link>https://abc102030.github.io/2021/rpi4-install-lineageos-17.1/</link>
+      <pubDate>Wed, 10 Feb 2021 17:00:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/2021/rpi4-install-lineageos-17.1/</guid>
+      <description>将于最近更新</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://abc102030.github.io/2021/hello-world/</link>
+      <pubDate>Mon, 08 Feb 2021 20:00:00 +0800</pubDate>
+      
+      <guid>https://abc102030.github.io/2021/hello-world/</guid>
+      <description>你好世界 Hello World C #include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;#34;Hello, World! \n&amp;#34;); return 0; } C# using System; namespace HelloWorldApplication { class HelloWorld { static void Main(string[] args) { Console.WriteLine(&amp;#34;Hello World&amp;#34;); Console.ReadKey(); } } } JAVA public class HelloWorld { public static void main(String[] args) { System.out.println(&amp;#34;Hello World&amp;#34;); } } JavaScript function helloWorld () { alert(&amp;#34;Hello, World!&amp;#34;) } Python #!/usr/bin/python3 print(&amp;#34;Hello, World!&amp;#34;)</description>
+    </item>
+    
+  </channel>
+</rss>
