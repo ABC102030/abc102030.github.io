@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>树莓派&#34; on ABC102030&#39;s Blog</title>
-    <link>https://abc102030.github.io/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
-    <description>Recent content in 树莓派&#34; on ABC102030&#39;s Blog</description>
+    <title>Ubuntu on ABC102030&#39;s Blog</title>
+    <link>https://abc102030.github.io/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on ABC102030&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 10 Feb 2021 17:00:00 +0800</lastBuildDate><atom:link href="https://abc102030.github.io/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Feb 2021 17:00:00 +0800</lastBuildDate><atom:link href="https://abc102030.github.io/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>树莓派4安装Ubuntu Desktop 20.10</title>
       <link>https://abc102030.github.io/2021/rpi4-install-ubuntu-20.10/</link>
